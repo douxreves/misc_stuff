@@ -7,10 +7,13 @@ import datetime
 
 random.seed()
 url = 'https://www.nicview.net/default'
-savedir = '/run/media/darin/easystore/SKC/'
+savedir = '/your/local/directory/to/save/images/to'
 nicviewuser = "your_nicview_user"
 nicviewpw = "your_nicview_password"
 
+#This connects to nicview with the supplied credentials
+#and attempts to save whatever images it can grab
+#in an unobtrusive manner.
 
 def get_screenshots():
     try:
